@@ -1,0 +1,25 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-9 col-sm-12 mt-5">
+            <input type="text" placeholder="enter username" class="form-control" name="username" [(ngModel)]="username">
+        </div>
+        <div class="col-lg-3 col-sm-12 mt-5">
+            <button type="button" class="btn btn-info" (click) = "findUserByUsername()">Search</button>
+        </div>
+    </div>
+    <h2 class="mt-5">Results</h2>
+    <div class="row col-lg-12 col-sm-12">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>{{user.username}}</td>
+                    <td>{{user.firstname}}</td>
+                    <td>{{user.lastname}}</td>
+                    <td>{{user.age}}</td>
+                    <td>{{user.password}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

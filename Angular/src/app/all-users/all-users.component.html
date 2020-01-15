@@ -1,0 +1,25 @@
+<div class = "container">
+    <div class = "row col-lg-12 col-sm-12">
+        <table class = "table table-striped">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor = "let user of users">
+                    <td>{{user.username}}</td>
+                    <td>{{user.firstname}}</td>
+                    <td>{{user.lastname}}</td>
+                    <td>{{user.age}}</td>
+                    <td>{{user.password}}</td>
+                    <td><button class = "btn btn-danger" (click) = "removeUser(user.username)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
